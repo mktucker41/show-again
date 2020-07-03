@@ -123,20 +123,32 @@ for (let index = 0; index < sampleArray.length; index++) {
     console.log(element)
     let even = element % 2 === 0
     if (even) {
-
+        document.body.append(element + " ")
     }
-    document.body.append(element + " ")
 }
 
 // Display all the odd numbers contained in sampleArray. (469, 755, 245, …, 179, 535)
 let headingThirteen = document.createElement('h1')
 headingThirteen.append('kata 13')
 document.body.append(headingThirteen)
+for (let index = 0; index < sampleArray.length; index++) {
+    const element = sampleArray[index];
+    console.log(element)
+    let odd = element % 2 !== 0
+    if (odd) {
+        document.body.append(element + " ")
+    }
+}
 
 // Display the square of each element in sampleArray. (219961, 570025, …, 222784)
 let headingFourteen = document.createElement('h1')
 headingFourteen.append('kata 14')
 document.body.append(headingFourteen)
+for (let index = 0; index < sampleArray.length; index++) {
+    const element = sampleArray[index];
+    let square = element ** 2
+    document.body.append(square + " ")
+}
 
 // Display the sum of all the numbers from 1 to 20.
 let headingFifteen = document.createElement('h1')
